@@ -1,0 +1,59 @@
+
+html, body {
+    font-family: 'Comfortaa', cursive;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgb(252,237,0);
+    background: linear-gradient(130deg, rgba(252,237,0,0.6306897759103641) 0%, rgba(249,250,144,0.8743872549019608) 53%, rgba(248,250,207,0.7175245098039216) 100%), url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+    overflow: hidden;
+    -webkit-animation: AnimateBG 150s ease infinite;
+    animation: BackgroundFlow 150s ease infinite;
+}
+
+@-webkit-keyframes BackgroundFlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+#title {
+    position: relative;
+    padding-top: 100px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 200px;
+    font-weight:100;
+}
+
+#sub-heading {
+    padding-top: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 50px;
+    font-weight:100;
+}
+
+@media only screen and (max-width: 1200px) {
+    #title  {
+    font-size: 150px;
+    }
+    #sub-heading {
+        font-size: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    #title  {
+    font-size: 50px;
+    }
+    #sub-heading {
+        font-size: 20px;
+    }
+  }
+
+  
+
