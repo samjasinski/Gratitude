@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import Title from './Title'
+import Form from './Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import SubHeading from './SubHeading';
-
-
 
 function App() {
 
@@ -19,6 +18,10 @@ function App() {
 
         <Row className="w-100" >
           <SubHeading text="What are you greatful for?"/>
+        </Row>
+
+        <Row className="w-100" >
+          <Form/>
         </Row>
       
       </Container>

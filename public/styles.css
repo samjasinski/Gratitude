@@ -4,7 +4,7 @@ html, body {
     height: 100vh;
     margin: 0 auto;
     background: rgb(252,237,0);
-    background: linear-gradient(130deg, rgba(252,237,0,0.6306897759103641) 0%, rgba(249,250,144,0.8743872549019608) 53%, rgba(248,250,207,0.7175245098039216) 100%), url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+    background: linear-gradient(130deg, rgba(252,237,0,0.6306897759103641) 0%, rgba(219, 206, 88, 0.874) 53%, rgba(248,250,207,0.7175245098039216) 100%), url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
     overflow: hidden;
     -webkit-animation: AnimateBG 150s ease infinite;
     animation: BackgroundFlow 150s ease infinite;
@@ -32,9 +32,23 @@ html, body {
 
 #sub-heading {
     padding-top: 10px;
+    padding-bottom: 50px;
     font-family: 'Comfortaa', cursive;
     font-size: 50px;
     font-weight:100;
+}
+
+input[type="text"]
+{
+    font-size:24px;
+    font-family: 'Comfortaa', cursive;
+    border: none;
+    outline: none;
+    background-color: rgb(246, 241, 233,0.9);
+    width: 50vw;
+    height: 5vh;
+    border-radius: 10px;
+    margin-bottom:100px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -52,6 +66,12 @@ html, body {
     }
     #sub-heading {
         font-size: 20px;
+        padding-bottom: 20px
+    }
+    input[type="text"]{
+      width: 70vw;
+      height: 65px;
+      margin-bottom:40px;
     }
   }
 
