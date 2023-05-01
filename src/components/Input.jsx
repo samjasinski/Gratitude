@@ -1,8 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 
 function Input (props) {
     return (
-        <input type="text" return="false" required/>
+        <input id={props.id} onChange={props.onChange} type="text" return="false" required/>
     )
 }
 
