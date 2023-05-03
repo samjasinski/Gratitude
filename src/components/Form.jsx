@@ -6,18 +6,35 @@ function Form (props) {
 
     const [inputOneValue, setInputOneValue] = useState("")
     const [inputTwoValue, setInputTwoValue] = useState("")
-    const [inputOThreeValue, setInputThreeValue] = useState("")
+    const [inputThreeValue, setInputThreeValue] = useState("")
     const [inputFourValue, setInputFourValue] = useState("")
     const [inputFiveValue, setInputFiveValue] = useState("")
 
     function trackInputChange (event) {
-        console.log(event.target.value, event.target.id)
+        if (event.target.id === '1') {
+            setInputOneValue(event.target.value)
+        } else if (event.target.id === '2') {
+            setInputTwoValue(event.target.value)
+        } else if (event.target.id === '3') {
+            setInputThreeValue(event.target.value)
+        } else if (event.target.id === '4') {
+            setInputFourValue(event.target.value)
+        } else if (event.target.id === '5') {
+            setInputFiveValue(event.target.value)
+        }
     }
-
 
     function handleSubmit(event) {
         event.preventDefault();
-        alert('submitted');
+        
+        const gratitudeObj = {
+            1: inputOneValue,
+            2: inputTwoValue,
+            3: inputThreeValue,
+            4: inputFourValue,
+            5: inputFiveValue
+        }
+
         event.target.reset();
     }
 
