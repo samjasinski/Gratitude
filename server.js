@@ -12,6 +12,6 @@ app.get('/express_backend', (req, res) => { //Line 9
 }); //Line 11
 
 app.get ('/', (req, res) => {
-  res.send({ express: 'YOUR EXPRESS BACKEND IS CONNECTED TO REACT' })
+  res.send({ message: 'Form submitted' })
 })
 
