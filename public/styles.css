@@ -3,8 +3,7 @@ html, body {
     font-family: 'Comfortaa', cursive;
     height: 100vh;
     margin: 0 auto;
-    background: rgb(252,237,0);
-    background: linear-gradient(130deg, rgba(252,237,0,0.6306897759103641) 0%, rgba(249,250,144,0.8743872549019608) 53%, rgba(248,250,207,0.7175245098039216) 100%), url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+    background: linear-gradient(130deg, rgba(252,237,0,0.6306897759103641) 0%, rgba(219, 206, 88, 0.874) 53%, rgba(248,250,207,0.7175245098039216) 100%), url("https://www.transparenttextures.com/patterns/arabesque.png");
     overflow: hidden;
     -webkit-animation: AnimateBG 150s ease infinite;
     animation: BackgroundFlow 150s ease infinite;
@@ -28,13 +27,51 @@ html, body {
     font-family: 'Comfortaa', cursive;
     font-size: 200px;
     font-weight:100;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 #sub-heading {
     padding-top: 10px;
+    padding-bottom: 50px;
     font-family: 'Comfortaa', cursive;
     font-size: 50px;
     font-weight:100;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+input[type="text"]
+{
+    font-size:24px;
+    font-family: 'Comfortaa', cursive;
+    border: none;
+    outline: none;
+    background-color: rgb(246, 241, 233,0.9);
+    width: 50vw;
+    height: 5vh;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.submit-button {
+  color: rgba(0, 0, 0, 0.7);
+    font-size:24px;
+    font-weight:900;
+    font-family: 'Comfortaa', cursive;
+    border: none;
+    outline: none;
+    background-color: rgb(240, 211, 66, 0.7);
+    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+    width: 50vw;
+    height: 5vh;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out
+}
+
+.submit-button:hover {
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 20px 30px  rgba(219, 183, 0, 0.63);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -52,8 +89,47 @@ html, body {
     }
     #sub-heading {
         font-size: 20px;
+        padding-bottom: 20px
+    }
+    input[type="text"]{
+      width: 70vw;
+      height: 65px;
+      margin-bottom:40px;
     }
   }
+
+  @media only screen and (max-width: 800px) {
+    #title  {
+    font-size: 50px;
+    padding-top: 50px;
+    }
+    #sub-heading {
+        font-size: 20px;
+        padding-bottom: 20px
+    }
+    input[type="text"]{
+      width: 70vw;
+      height: 65px;
+      margin-bottom:40px;
+    }
+
+  }
+
+  @media only screen and (max-height: 700px) {
+    #title  {
+      font-size: 50px;
+      }
+      #sub-heading {
+          font-size: 20px;
+          padding-bottom: 20px
+      }
+      input[type="text"]{
+        width: 70vw;
+        height: 65px;
+        margin-bottom:15px;
+      }
+    }
+  
 
   
 
