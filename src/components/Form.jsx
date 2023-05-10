@@ -24,7 +24,7 @@ function Form (props) {
         }
     }
 
-    function handleSubmit(event) {
+    async function handleSubmit(event) {
         event.preventDefault();
         
         const gratitudeObj = {
@@ -34,6 +34,18 @@ function Form (props) {
             4: inputFourValue,
             5: inputFiveValue
         }
+
+        await fetch("http://localhost:5050/record", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(gratitudeObj),
+          })
+          .catch(error => {
+            window.alert(error);
+            return;
+          });
 
         event.target.reset();
     }
