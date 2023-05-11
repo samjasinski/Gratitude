@@ -35,6 +35,8 @@ function Form (props) {
             5: inputFiveValue
         }
 
+        
+
         await fetch("http://localhost:5050/record", {
             method: "POST",
             headers: {
@@ -47,7 +49,8 @@ function Form (props) {
             return;
           });
 
-        event.target.reset();
+          event.target.reset();
+        
     }
 
     return (
